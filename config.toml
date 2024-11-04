@@ -1,0 +1,82 @@
+                
+ # |_   _  | o    
+ # | | (/_ | | >< 
+
+# helix configuration
+
+# theme = "fleet_dark"
+# theme = "gruvbox_dark_hard"
+# theme = "flexoki_dark"
+# theme = "material_deep_ocean"
+# theme = "everblush"
+# theme = "dark_plus"
+# theme = "rose_pine"
+# theme = "modus_vivendi_tritanopia"
+# theme = "kanagawa-dragon"
+# theme = "vim_dark_high_contrast'
+# theme = "solarized_dark"
+# theme = "autumn_night"
+# theme = "gruvbox_tr"
+# theme = "onedarker"
+theme = "rose_pine_tr"
+
+[editor]
+scrolloff = 5
+# line-number = "relative"
+cursorline = false
+cursorcolumn = false
+rulers = [80]
+# bufferline = "never"
+bufferline = "multiple"
+# color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+separator = " "
+left = ["mode", "file-base-name", "separator", "spinner", "separator", "version-control"]
+center = []
+right = ["read-only-indicator", "file-modification-indicator", "diagnostics", "position", "file-encoding"]
+#"selections"
+
+[editor.lsp]
+enable = true
+
+# or control each character
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = false
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0
+wrap-indicator = ""  # set wrap-indicator to "" to hide it
+
+[editor.gutters]
+layout = ["diagnostics", "spacer", "line-numbers", "spacer"]
+# , "diff"]
+# layout = ["diagnostics", "diff"]
+# layout = []
