@@ -3,6 +3,3 @@ inherits = "rose_pine"
 "ui.background" = {}
 "ui.gutter" = {}
 "ui.linenr" = {}
-"ui.linenr.selected" = {bg = "#555555"}
-"ui.virtual.ruler" = {bg = "#555555"}
-"ui.statusline" = {bg = "#333333"}
